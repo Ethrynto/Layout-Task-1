@@ -1,0 +1,190 @@
+
+
+/** Rent info cards */
+.main .container .info-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px 0;
+}
+/* Rent info card*/
+.main .container .info-cards .info-cards__card {
+    background-color: var(--info-color-500);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main .container .info-cards .info-cards__card .info-card__content {
+    width: 50%;
+}
+.main .container .info-cards .info-cards__card .info-card__content .info-card__title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.main .container .info-cards .info-cards__card .info-card__content .info-card__description {
+    font-size: 0.95em;
+    font-weight: 400;
+    margin: 10px 0;
+}
+/* Rent car picture */
+.main .container .info-cards .info-cards__card .info-card__img {
+    margin-left: 10%;
+}
+
+/** Filters block */
+.main .container .filters-block {
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+    gap: 20px;
+    padding: 20px 0;
+}
+.main .container .filters-block .filters-block__block .filters-block__header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.main .container .filters-block .filters-block__block {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main .container .filters-block .filters-block__block .filters-block__circle {
+    width: 10px;
+    height: 10px;
+    border: 5px solid var(--info-color-200);
+    border-radius: 50%;
+    background-color: var(--primary-color-500);
+}
+.main .container .filters-block .filters-block__block .filters-block__title {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.main .container .filters-block .filters-block__block .filters-block__filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .container .filters-block .filters-block__block .filters-block__filters .filters-block__filter {
+    padding: 0 20px;
+}
+.main .container .filters-block .filters-block__block .filters-block__filters .filters-block__filter:nth-child(2) {
+    border-left: 1px solid var(--secondary-color-100);
+    border-right: 1px solid var(--secondary-color-100);
+}
+.main .container .filters-block .filters-block__block .filters-block__filters .filters-block__filter label {
+    font-size: 1em;
+    font-weight: 700;
+    color: black;
+}
+.main .container .filters-block .filters-block__block .filters-block__filters .filters-block__filter select {
+    border: none;
+    display: flex;
+    color: var(--secondary-color-500);
+    margin-top: 10px;
+    padding-right: 20px;
+    background: url('/icons/arrow-down.svg') no-repeat right center;
+    background-size: 16px; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+}
+
+
+/** Cars block */
+.main .container .cars-block {
+    margin: 50px 0;
+}
+.main .container .cars-block .cars_block__title {
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 10px 0;
+    color: var(--secondary-color-300);
+}
+.main .container .cars-block .cars-block__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+.main .container .cars-block .cars-block__list .car-card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main .container .cars-block .cars-block__list .car-card .car-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .container .cars-block .cars-block__list .car-card .car-card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main .container .cars-block .cars-block__list .car-card .car-card__type {
+    font-size: .8em;
+    font-weight: 600;
+    color: var(--secondary-color-300);
+    margin: 5px 0;
+}
+.main .container .cars-block .cars-block__list .car-card .car-card__img {
+    width: 100%;
+    margin: 20px 5px;
+}
+
+.main .container .cars-block .cars-block__list .car-card .car-card__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .container .cars-block .cars-block__list .car-card .car-card__content .car-card__description {
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 10px 0;
+    color: var(--secondary-color-300);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main .container .cars-block .cars-block__list .car-card .car-card__footer p {
+    font-size: 1em;
+    font-weight: 600;
+}
+.main .container .cars-block .cars-block__list .car-card .car-card__footer p span {
+    font-size: 0.8em;
+    font-weight: 500;
+    color: var(--secondary-color-300);
+}
+.main .container .cars-block .cars-block__btn-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main .container .info-cards {
+        grid-template-columns: 1fr;
+    }
+    .main .container .info-cards .info-cards__card .info-card__content {
+        width: 100%;
+    }
+    .main .container .info-cards .info-cards__card .info-card__img {
+        margin-left: 0;
+    }
+
+
+    /** Filters block */
+    .main .container .filters-block {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/default.css">
+    <link rel="stylesheet" href="/styles/car.css">
+    <title>Car Detail</title>
+</head>
+<body>
+    <!-- Header component -->
+    <header class="header">
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                MORENT
+            </div>
+
+            <!-- Search input -->
+            <div class="search">
+                <input type="text" class="search__input" placeholder="Search something here">
+                <img src="/icons/search-normal.svg" class="search__icon" alt="">
+                <img src="/icons/filter.svg" class="search__filter" alt="">
+            </div>
+
+            <!-- Profile buttons -->
+            <ul class="profile-menu">
+                <li class="profile__item">
+                    <img src="/icons/heart.svg" class="profile__icon" alt="">
+                </li>
+                <li class="profile__item">
+                    <img src="/icons/notification.svg" class="profile__icon" alt="">
+                </li>
+                <li class="profile__item">
+                    <img src="/icons/setting-2.svg" class="profile__icon" alt="">
+                </li>
+                <li class="profile__item profile__avatar-item">
+                    <img src="/pictures/profile.svg" class="profile__icon profile__avatar" alt="">
+                </li>
+            </ul>
+
+            <!-- Search input for mobile devices -->
+            <div class="search-mobile">
+                <input type="text" class="search__input" placeholder="Search something here">
+                <img src="/icons/search-normal.svg" class="search__icon" alt="">
+                <img src="/icons/filter.svg" class="search__filter" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+        <div class="container">
+
+            <!-- Left filters block -->
+            <aside class="sidebar">
+                <div class="sidebar__content-block">
+
+                    <!-- Type filter -->
+                    <h3 class="sidebar__title">TYPE</h3>
+                    <ul class="sidebar__list">
+                        <div class="sidebar__item">
+                            <input type="checkbox" class="sidebar__checkbox" id="checkbox-1">
+                            <label for="checkbox-1" class="sidebar__label">Sedan</label>
+                        </div>
+                        <div class="sidebar__item">
+                            <input type="checkbox" class="sidebar__checkbox" id="checkbox-2">
+                            <label for="checkbox-2" class="sidebar__label">SUV</label>
+                        </div>
+                        <div class="sidebar__item">
+                            <input type="checkbox" class="sidebar__checkbox" id="checkbox-3">
+                            <label for="checkbox-3" class="sidebar__label">Truck</label>
+                        </div>
+                        <div class="sidebar__item">
+                            <input type="checkbox" class="sidebar__checkbox" id="checkbox-4">
+                            <label for="checkbox-4" class="sidebar__label">Coupe</label>
+
+                        </div>
+                        <div class="sidebar__item">
+                            <input type="checkbox" class="sidebar__checkbox" id="checkbox-5">
+                            <label for="checkbox-5" class="sidebar__label">Convertible</label>
+                        </div>
+                        <div class="sidebar__item">
+                            <input type="checkbox" class="sidebar__checkbox" id="checkbox-6">
+                            <label for="checkbox-6" class="sidebar__label">Hatchback</label>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- Capacity filter -->
+                <div class="sidebar__content-block">
+                    <h3 class="sidebar__title">CAPACITY</h3>
+                    <ul class="sidebar__list">
+                        <div class="sidebar__item">
+                            <input type="checkbox" class="sidebar__checkbox" id="checkbox-7">
+                            <label for="checkbox-7" class="sidebar__label">2 Person</label>
+                        </div>
+                        <div class="sidebar__item">
+                            <input type="checkbox" class="sidebar__checkbox" id="checkbox-8">
+                            <label for="checkbox-8" class="sidebar__label">4 Person</label>
+                        </div>
+                        <div class="sidebar__item">
+                            <input type="checkbox" class="sidebar__checkbox" id="checkbox-9">
+                            <label for="checkbox-9" class="sidebar__label">6 Person</label>
+                        </div>
+                        <div class="sidebar__item">
+                            <input type="checkbox" class="sidebar__checkbox" id="checkbox-10">
+                            <label for="checkbox-10" class="sidebar__label">8 or More</label>
+                        </div>
+                    </ul>
+                </div>
+
+                <!-- Price filter -->
+                <div class="sidebar__content-block">
+                    <h3 class="sidebar__title">PRICE</h3>
+                    <div class="sidebar__item sidebar__item-range">
+                        <input type="range" class="sidebar__range" id="checkbox-7">
+                        <label for="checkbox-7" class="sidebar__label">Max. $100.00</label>
+                    </div>
+                </div>
+            </aside>
+
+
+            <div class="car-detail">
+                <div class="car-detail__images">
+                    <img src="/pictures/car-1.jpg" class="car-detail__image car-detail__main-image" alt="">
+                    <img src="/pictures/car-1.jpg" class="car-detail__image car-detail__image-active" alt="">
+                    <img src="/pictures/car-1.jpg" class="car-detail__image" alt="">
+                    <img src="/pictures/car-2.jpg" class="car-detail__image" alt="">
+                </div>
+                <div class="car-detail__info">
+                    <!-- Car info header block -->
+                    <div class="car-detail__header">
+                        <div class="car-detail__title">
+                            <h1>Nissan GT-R</h1>
+                            <img src="/icons/heart.svg" alt="">
+                        </div>
+                        <div class="car-detail__subtitle">
+                            <div class="car-detail__valuation">
+                                <img src="/icons/ic-actions-star.svg" alt="">
+                                <img src="/icons/ic-actions-star.svg" alt="">
+                                <img src="/icons/ic-actions-star.svg" alt="">
+                                <img src="/icons/ic-actions-star.svg" alt="">
+                                <img src="/icons/ic-actions-star-1.svg" alt="">
+                            </div>
+                            <p class="car-detail__reviewers">440+ Reviewer</p>
+                        </div>
+                    </div>
+
+                    <!-- Car info content block -->
+                    <div class="car-detail__content">
+                        <div class="car-detail__description">
+                            <p>NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".</p>
+                        </div>
+
+                        <div class="car-detail__details">
+                            <div class="car-detail__detail">
+                                <p class="car-detail__detail-title">Type</p>
+                                <p class="car-detail__detail-value">Sport</p>   
+                            </div>
+                            <div class="car-detail__detail">
+                                <p class="car-detail__detail-title">Capacity</p>
+                                <p class="car-detail__detail-value">2 Person</p>   
+                            </div>
+                            <div class="car-detail__detail">
+                                <p class="car-detail__detail-title">Steering</p>
+                                <p class="car-detail__detail-value">Manual</p>   
+                            </div>
+                            <div class="car-detail__detail">
+                                <p class="car-detail__detail-title">Gasoline</p>
+                                <p class="car-detail__detail-value">70L</p>   
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Car info footer block -->
+                    <div class="car-detail__footer">
+                        <div class="car-detail__price">
+                            <p class="car-detail__price-value">$100.00</p>
+                            <p class="car-detail__price-time">/day</p>  
+                        </div>
+                        <button class="car-detail__button btn">Rent Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer component -->
+    <footer class="footer">
+        <div class="wrapper">
+            <!-- Footer top content -->
+            <div class="footer__top">
+
+                <!-- Left content -->
+                <div class="footer__top-left">
+                    <div class="footer__logo">
+                        MORENT
+                    </div>
+                    <p class="footer__description">Our vision is to provide convenience and help increase your sales business</p>
+                </div>
+
+                <!-- Right content -->
+                <div class="footer__top-right">
+                    <div class="footer__menu">
+                        <h3 class="footer__title">About</h3>
+                        <ul class="footer__links">
+                            <li class="footer__link">How it works</li>
+                            <li class="footer__link">Featured</li>
+                            <li class="footer__link">Partnership</li>
+                            <li class="footer__link">Business Relation</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu">
+                        <h3 class="footer__title">Community</h3>
+                        <ul class="footer__links">
+                            <li class="footer__link">Events</li>
+                            <li class="footer__link">Blog</li>
+                            <li class="footer__link">Podcast</li>
+                            <li class="footer__link">Invite a friend</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu">
+                        <h3 class="footer__title">Socials</h3>
+                        <ul class="footer__links">
+                            <li class="footer__link">Discord</li>
+                            <li class="footer__link">Instagram</li>
+                            <li class="footer__link">Twitter</li>
+                            <li class="footer__link">Facebook</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom content -->
+            <div class="footer__bottom">
+                <p class="footer__copy">© 2022 MORENT. All rights reserved</p>
+                <div class="footer__links">
+                    <p class="footer__link">Privacy Policy</p>
+                    <p class="footer__link">Terms & Condition</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

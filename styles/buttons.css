@@ -1,0 +1,35 @@
+
+.btn {
+    padding: 10px 25px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: var(--primary-color-500);
+    color: white;
+    margin: 10px 0;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover, .square-btn:hover {
+    background-color: var(--primary-color-600);
+}
+
+.square-btn {
+    width: 60px;
+    height: 60px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--primary-color-500);
+    color: white;
+    margin: 10px 0;
+    transition: 0.2s ease-in-out;
+    margin: auto;
+}
+
+.info-btn {
+    background-color: var(--info-color-500);
+}
+.info-btn:hover {
+    background-color: var(--info-color-600);
+}

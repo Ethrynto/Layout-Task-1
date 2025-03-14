@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('buttons.css');
+@import url('header.css');
+@import url('footer.css');
+
+:root {
+    /** Primary colors */
+    --primary-color-900: #0A196F;
+    --primary-color-800: #102587;
+    --primary-color-700: #1A37A7;
+    --primary-color-600: #264BC8;
+    --primary-color-500: #3563E9;
+    --primary-color-400: #658DF1;
+    --primary-color-300: #85A8F8;
+    --primary-color-200: #AEC8FC;
+    --primary-color-100: #D6E4FD;
+
+    /** Secondary colors */
+    --secondary-color-900: #040815;
+    --secondary-color-800: #080C19;
+    --secondary-color-700: #0D121F;
+    --secondary-color-600: #131825;
+    --secondary-color-500: #1A202C;
+    --secondary-color-400: #596780;
+    --secondary-color-300: #90A3BF;
+    --secondary-color-200: #C3D4E9;
+    --secondary-color-100: #E0E9F4;
+
+    /** Success colors */
+    --success-color-900: #3B6506;
+    --success-color-800: #4C7A0B;
+    --success-color-700: #659711;
+    --success-color-600: #7FB519;
+    --success-color-500: #9CD323;
+    --success-color-400: #BCE455;
+    --success-color-300: #D3F178;
+    --success-color-200: #E8FAA6;
+    --success-color-100: #F5FCD2;
+
+    /** Error colors */
+    --error-color-900: #7A0619;
+    --error-color-800: #930B16;
+    --error-color-700: #B71112;
+    --error-color-600: #DB2719;
+    --error-color-500: #FF4423;
+    --error-color-400: #FF7F59;
+    --error-color-300: #FFA37A;
+    --error-color-200: #FFC8A6;
+    --error-color-100: #FFE7D3;
+
+    /** Warning colors */
+    --warn-color-900: #7A4D0B;
+    --warn-color-800: #936312;
+    --warn-color-700: #B7821D;
+    --warn-color-600: #DBA32A;
+    --warn-color-500: #FFC73A;
+    --warn-color-400: #FFD96B;
+    --warn-color-300: #FFE488;
+    --warn-color-200: #FFEFB0;
+    --warn-color-100: #FFF8D7;
+
+    /** Information colors */
+    --info-color-900: #102E7A;
+    --info-color-800: #1A4393;
+    --info-color-700: #2A60B7;
+    --info-color-600: #3D81DB;
+    --info-color-500: #54A6FF;
+    --info-color-400: #7EC2FF;
+    --info-color-300: #98D3FF;
+    --info-color-200: #BAE5FF;
+    --info-color-100: #DCF3FF;
+}
+
+* {
+    box-sizing: none;
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    min-height: 100vh;
+}
+.main .container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100vh;
+}

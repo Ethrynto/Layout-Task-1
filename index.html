@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/default.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Car Rent</title>
+</head>
+<body>
+    <!-- Header component -->
+    <header class="header">
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                MORENT
+            </div>
+
+            <!-- Search input -->
+            <div class="search">
+                <input type="text" class="search__input" placeholder="Search something here">
+                <img src="/icons/search-normal.svg" class="search__icon" alt="">
+                <img src="/icons/filter.svg" class="search__filter" alt="">
+            </div>
+
+            <!-- Profile buttons -->
+            <ul class="profile-menu">
+                <li class="profile__item">
+                    <img src="/icons/heart.svg" class="profile__icon" alt="">
+                </li>
+                <li class="profile__item">
+                    <img src="/icons/notification.svg" class="profile__icon" alt="">
+                </li>
+                <li class="profile__item">
+                    <img src="/icons/setting-2.svg" class="profile__icon" alt="">
+                </li>
+                <li class="profile__item profile__avatar-item">
+                    <img src="/pictures/profile.svg" class="profile__icon profile__avatar" alt="">
+                </li>
+            </ul>
+
+            <!-- Search input for mobile devices -->
+            <div class="search-mobile">
+                <input type="text" class="search__input" placeholder="Search something here">
+                <img src="/icons/search-normal.svg" class="search__icon" alt="">
+                <img src="/icons/filter.svg" class="search__filter" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="main">
+        <div class="container">
+            <!-- Car info cards -->
+            <div class="info-cards">
+
+                <!-- Card for Ferrari F10 -->
+                <div class="info-cards__card">
+                    <div class="info-card__content">
+                        <h3 class="info-card__title">The best platform for Car rental</h3>
+                        <p class="info-card__description">Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+                        <button class="info-card__button btn">Rental Car</button>
+                    </div>
+                    <img src="/pictures/ferrari-f10.png" alt="" class="info-card__img">
+                </div>
+
+                <!-- Card for Nissan GTR -->
+                <div class="info-cards__card" style="background-color: var(--primary-color-500);">
+                    <div class="info-card__content">
+                        <h3 class="info-card__title">Easy way to rent a car at a low price</h3>
+                        <p class="info-card__description">Providing cheap car rental services and safe and comfortable facilities.</p>
+                        <button class="info-card__button btn info-btn">Rental Car</button>
+                    </div>
+                    <img src="/pictures/nissan-gtr.png" alt="" class="info-card__img">
+                </div>
+            </div>
+
+            <!-- Filters block -->
+            <div class="filters-block">
+                <!-- Pick-up block -->
+                <div class="filters-block__block">
+                    <div class="filters-block__header">
+                        <div class="filters-block__circle"></div>
+                        <h3 class="filters-block__title">Pick-Up</h3>
+                    </div>
+                    <div class="filters-block__filters">
+                        <div class="filters-block__filter">
+                            <label for="location" class="filters-block__label">Locations</label>
+                            <select name="location" id="location" class="filters-block__input">
+                                <option value="all">Select your city</option>
+                                <option value="ferrari">New York</option>
+                                <option value="ferrari">Bahgdad</option>
+                                <option value="ferrari">Washington</option>
+                                <option value="ferrari">London</option>
+                                <option value="ferrari">Damascus</option>
+                                <option value="nissan">Solja</option>
+                            </select>
+                        </div>
+                        <div class="filters-block__filter">
+                            <label for="date" class="filters-block__label">Date</label>
+                            <select name="date" id="date" class="filters-block__input">
+                                <option value="all">Select your date</option>
+                                <option value="ferrari">Ferrari</option>
+                                <option value="nissan">Nissan</option>
+                            </select>
+                        </div>
+                        <div class="filters-block__filter">
+                            <label for="time" class="filters-block__label">Time</label>
+                            <select name="time" id="time" class="filters-block__input">
+                                <option value="all">Select your time</option>
+                                <option value="sport">Sport</option>
+                                <option value="sedan">Sedan</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swap button -->
+                <button class="filters-block__swap-btn square-btn">
+                    <img src="/icons/swap.svg" alt="">
+                </button>
+
+                <!-- Drop-Off block -->
+                <div class="filters-block__block">
+                    <div class="filters-block__header">
+                        <div class="filters-block__circle"></div>
+                        <h3 class="filters-block__title">Drop-Off</h3>
+                    </div>
+                    <div class="filters-block__filters">
+                        <div class="filters-block__filter">
+                            <label for="location" class="filters-block__label">Locations</label>
+                            <select name="location" id="location" class="filters-block__input">
+                                <option value="all">Select your city</option>
+                                <option value="ferrari">New York</option>
+                                <option value="ferrari">Bahgdad</option>
+                                <option value="ferrari">Washington</option>
+                                <option value="ferrari">London</option>
+                                <option value="ferrari">Damascus</option>
+                                <option value="nissan">Solja</option>
+                            </select>
+                        </div>
+                        <div class="filters-block__filter">
+                            <label for="date" class="filters-block__label">Date</label>
+                            <select name="date" id="date" class="filters-block__input">
+                                <option value="all">Select your date</option>
+                                <option value="ferrari">Ferrari</option>
+                                <option value="nissan">Nissan</option>
+                            </select>
+                        </div>
+                        <div class="filters-block__filter">
+                            <label for="time" class="filters-block__label">Time</label>
+                            <select name="time" id="time" class="filters-block__input">
+                                <option value="all">Select your time</option>
+                                <option value="sport">Sport</option>
+                                <option value="sedan">Sedan</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Car list -->
+            <div class="cars-block">
+                <div class="cars_block__title">
+                    <p>Recomentation Car</p>
+                </div>
+                <div class="cars-block__list">
+
+                </div>
+                <div class="cars-block__btn-block">
+                    <button class="cars-block__btn btn primary-btn">See more car</button>
+                </div>
+            </div>
+            
+
+            
+        </div>
+    </main>
+
+    <!-- Footer component -->
+    <footer class="footer">
+        <div class="wrapper">
+            <!-- Footer top content -->
+            <div class="footer__top">
+
+                <!-- Left content -->
+                <div class="footer__top-left">
+                    <div class="footer__logo">
+                        MORENT
+                    </div>
+                    <p class="footer__description">Our vision is to provide convenience and help increase your sales business</p>
+                </div>
+
+                <!-- Right content -->
+                <div class="footer__top-right">
+                    <div class="footer__menu">
+                        <h3 class="footer__title">About</h3>
+                        <ul class="footer__links">
+                            <li class="footer__link">How it works</li>
+                            <li class="footer__link">Featured</li>
+                            <li class="footer__link">Partnership</li>
+                            <li class="footer__link">Business Relation</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu">
+                        <h3 class="footer__title">Community</h3>
+                        <ul class="footer__links">
+                            <li class="footer__link">Events</li>
+                            <li class="footer__link">Blog</li>
+                            <li class="footer__link">Podcast</li>
+                            <li class="footer__link">Invite a friend</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__menu">
+                        <h3 class="footer__title">Socials</h3>
+                        <ul class="footer__links">
+                            <li class="footer__link">Discord</li>
+                            <li class="footer__link">Instagram</li>
+                            <li class="footer__link">Twitter</li>
+                            <li class="footer__link">Facebook</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom content -->
+            <div class="footer__bottom">
+                <p class="footer__copy">© 2022 MORENT. All rights reserved</p>
+                <div class="footer__links">
+                    <p class="footer__link">Privacy Policy</p>
+                    <p class="footer__link">Terms & Condition</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    let car = {
+        name: "Volkswagen CR-V",
+        price: 80.00,
+        type: "SUV",
+        img: "/pictures/cr-v.png",
+        seats: 6,
+        oil: 90
+    }
+
+    for(let i = 0; i < 12; i++) {
+        let carCard = document.createElement("div");
+        carCard.classList.add("car-card");
+        carCard.innerHTML = `
+            <div class="car-card__header">
+                <h3 class="car-card__title">${car.name}</h3>
+                <img src="/icons/like.svg" alt="">
+            </div>
+            <p class="car-card__type">${car.type}</p>
+            <img src="${car.img}" alt="" class="car-card__img">
+            <div class="car-card__content">
+                <div class="car-card__description">
+                    <img src="/icons/gas-station.svg" alt="">
+                    <p>${car.oil}L</p>
+                </div>
+                <div class="car-card__description">
+                    <img src="/icons/car.svg" alt="">
+                    <p>Manual</p>
+                </div>
+                <div class="car-card__description">
+                    <img src="/icons/profile-2user.svg" alt="">
+                    <p>${car.seats} People</p>
+                </div>
+            </div>
+            <div class="car-card__footer">
+                <p>$${car.price}/<span>day</span></p>
+                <button class="car-card__button btn primary-btn">Rent Now</button> 
+            </div>
+        `;
+        document.querySelector(".cars-block__list").appendChild(carCard);
+    }
+
+
+    </script>
+</body>
+</html>
